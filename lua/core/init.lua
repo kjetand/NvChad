@@ -102,6 +102,12 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   end,
 })
 
+vim.cmd[[
+if executable('zsh')
+  set shell=/bin/zsh
+endif
+]]
+
 -------------------------------------- commands ------------------------------------------
 local new_cmd = vim.api.nvim_create_user_command
 
